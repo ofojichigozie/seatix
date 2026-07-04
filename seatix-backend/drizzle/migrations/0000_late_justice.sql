@@ -1,8 +1,8 @@
 CREATE TYPE "public"."role" AS ENUM('attendee', 'organizer', 'admin');--> statement-breakpoint
-CREATE TYPE "public"."event_status" AS ENUM('draft', 'published', 'cancelled');--> statement-breakpoint
+CREATE TYPE "public"."event_status" AS ENUM('draft', 'published');--> statement-breakpoint
 CREATE TYPE "public"."seat_status" AS ENUM('available', 'held', 'booked', 'blocked');--> statement-breakpoint
 CREATE TYPE "public"."seat_type" AS ENUM('vip', 'regular', 'economy', 'disabled');--> statement-breakpoint
-CREATE TYPE "public"."booking_status" AS ENUM('pending', 'confirmed', 'cancelled');--> statement-breakpoint
+CREATE TYPE "public"."booking_status" AS ENUM('pending', 'confirmed', 'failed');--> statement-breakpoint
 CREATE TABLE "users" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
 	"name" varchar(100) NOT NULL,
