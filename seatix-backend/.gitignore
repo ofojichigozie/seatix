@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Drizzle migrations meta (keep migrations, ignore journal backups)
+drizzle/migrations/meta/
+
+# Environment variables
+.env
+.env.local
+.env.prod
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# TypeScript incremental build
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Coverage
+coverage/

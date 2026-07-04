@@ -1,0 +1,23 @@
+# Local documentation not pushed
+_project-docs_/
+
+# Node modules and build output
+**/node_modules/
+**/dist/
+**/build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
